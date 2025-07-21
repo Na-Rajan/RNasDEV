@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "opendevin"
+name = "rnasdev"
 version = "0.1.0"
-description = "OpenDevin: Code Less, Make More"
-authors = ["OpenDevin"]
+description = "RNasDEV: Autonomous AI Developer Agent by Rajan Nagarajan. See README for vision and roadmap."
+authors = ["Rajan Nagarajan"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/OpenDevin/OpenDevin"
+repository = "https://github.com/Na-Rajan/RNasDEV"
 
 [tool.poetry.dependencies]
 python = "^3.11"

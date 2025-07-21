@@ -23,7 +23,7 @@ COMMAND_USAGE = {
     'goto': 'Args:\n<line_num>\nUsage:\n```\ngoto <line_num>\n```\nThis will show you the 100 lines below and including the line you specify within your current file.',
     'scroll_up': 'Usage:\n```\nscroll_up\n```\nThis will return the 100 lines above where you are currently at',
     'scroll_down': 'Usage:\n```\nscroll_down\n```\nThis will return the 100 line below where you are currently at',
-    'browse': 'Args:\n<url>\nUsage:\n```\nbrowse https://github.com/OpenDevin/OpenDevin\n```\nThis will fetch the Text elements from the given url and show them to you.',
+    'browse': 'Args:\n<url>\nUsage:\n```\nbrowse https://github.com/Na-Rajan/RNasDEV\n```\nThis will fetch the Text elements from the given url and show them to you (RNasDEV project).',
 }
 
 DEFAULT_COMMANDS = '\n'.join(

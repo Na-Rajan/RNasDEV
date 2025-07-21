@@ -1,7 +1,7 @@
-# Makefile for OpenDevin project
+# Makefile for RNasDEV project
 
 # Variables
-DOCKER_IMAGE = ghcr.io/opendevin/sandbox
+DOCKER_IMAGE = ghcr.io/na-rajan/rnasdev-sandbox
 BACKEND_PORT = 3000
 BACKEND_HOST = "127.0.0.1:$(BACKEND_PORT)"
 FRONTEND_PORT = 3001
@@ -160,7 +160,7 @@ setup-config-prompts:
 
 	@echo "Enter your LLM Embedding Model\nChoices are openai, azureopenai, llama2 or leave blank to default to 'BAAI/bge-small-en-v1.5' via huggingface"; \
 	 read -p "> " llm_embedding_model; \
-	 	echo "LLM_EMBEDDING_MODEL=\"$$llm_embedding_model\"" >> $(CONFIG_FILE).tmp; \
+		echo "LLM_EMBEDDING_MODEL=\"$$llm_embedding_model\"" >> $(CONFIG_FILE).tmp; \
 		if [ "$$llm_embedding_model" = "llama2" ]; then \
 			read -p "Enter the local model URL (will overwrite LLM_BASE_URL): " llm_base_url; \
 				echo "LLM_BASE_URL=\"$$llm_base_url\"" >> $(CONFIG_FILE).tmp; \
@@ -183,11 +183,11 @@ help:
 	@echo "Targets:"
 	@echo "  $(GREEN)build$(RESET)               - Build project, including environment setup and dependencies."
 	@echo "  $(GREEN)lint$(RESET)                - Run linters on the project."
-	@echo "  $(GREEN)setup-config$(RESET)        - Setup the configuration for OpenDevin by providing LLM API key,"
+	@echo "  $(GREEN)setup-config$(RESET)        - Setup the configuration for RNasDEV by providing LLM API key," 
 	@echo "                        LLM Model name, and workspace directory."
-	@echo "  $(GREEN)start-backend$(RESET)       - Start the backend server for the OpenDevin project."
-	@echo "  $(GREEN)start-frontend$(RESET)      - Start the frontend server for the OpenDevin project."
-	@echo "  $(GREEN)run$(RESET)                 - Run the OpenDevin application, starting both backend and frontend servers."
+	@echo "  $(GREEN)start-backend$(RESET)       - Start the backend server for the RNasDEV project."
+	@echo "  $(GREEN)start-frontend$(RESET)      - Start the frontend server for the RNasDEV project."
+	@echo "  $(GREEN)run$(RESET)                 - Run the RNasDEV application, starting both backend and frontend servers."
 	@echo "                        Backend Log file will be stored in the 'logs' directory."
 	@echo "  $(GREEN)help$(RESET)                - Display this help message, providing information on available targets."
 

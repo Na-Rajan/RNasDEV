@@ -1,5 +1,5 @@
 '''
-Script used to convert devin's output into the desired json format for evaluation on SWE-bench
+Script used to convert RNasDEV's output into the desired json format for evaluation on SWE-bench.
 
 Usage:
     python prepare_devin_outputs_for_evaluation.py <setting>
@@ -8,9 +8,10 @@ Usage:
 Outputs:
     two json files under evaluation/SWE-bench/data/
 
+This script is part of the RNasDEV evaluation pipeline. RNasDEV builds on the original Devin agent, extending its capabilities for autonomous software engineering.
 '''
 
-#fetch devin's outputs into a json file for evaluation
+# Fetch RNasDEV's outputs into a json file for evaluation
 import os
 import sys
 import json
@@ -18,7 +19,7 @@ import requests
 from tqdm import tqdm
 
 def get_devin_eval_output(setting):
-    repo_url = "CognitionAI/devin-swebench-results"
+    repo_url = "CognitionAI/devin-swebench-results"  # Original Devin results repo; update if RNasDEV results are available
     folder_path = "output_diffs"
 
     base_url = "https://api.github.com/repos/"
@@ -51,22 +52,22 @@ def get_devin_eval_output(setting):
         get_files(failed_api_url, "fail", failed_files_info)
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(script_dir, "../data/devin/")
+    output_dir = os.path.join(script_dir, "../data/rnasdev/")  # RNasDEV output directory
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
     if setting == "passed" or setting == "all":
-        with open(os.path.join(output_dir, "devin_swe_passed.json"), "w") as pass_file:
+        with open(os.path.join(output_dir, "rnasdev_swe_passed.json"), "w") as pass_file:
             json.dump(pass_files_info, pass_file, indent=4)
 
     if setting == "failed" or setting == "all":
-        with open(os.path.join(output_dir, "devin_swe_failed.json"), "w") as fail_file:
+        with open(os.path.join(output_dir, "rnasdev_swe_failed.json"), "w") as fail_file:
             json.dump(failed_files_info, fail_file, indent=4)
 
     if setting == "all":
         merged_output = pass_files_info + failed_files_info
-        with open(os.path.join(output_dir, "devin_swe_outputs.json"), "w") as merge_file:
+        with open(os.path.join(output_dir, "rnasdev_swe_outputs.json"), "w") as merge_file:
             json.dump(merged_output, merge_file, indent=4)
 
 

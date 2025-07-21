@@ -60,9 +60,9 @@ sudo systemctl stop ollama
 
 For more info go [here](https://github.com/ollama/ollama/blob/main/docs/faq.md)
 
-## 3. Start OpenDevin
+## 3. Start RNasDEV
 
-Use the instructions in [README.md](/README.md) to start OpenDevin using Docker.
+Use the instructions in [README.md](/README.md) to start RNasDEV using Docker.
 When running `docker run`, add the following environment variables using `-e`:
 
 ```
@@ -84,7 +84,7 @@ You should now be able to connect to `http://localhost:3001/` with your local mo
 
 ## Additional Notes for WSL2 Users:
 
-1. If you encounter the following error during setup: `Exception: Failed to create opendevin user in sandbox: b'useradd: UID 0 is not unique\n'`
+1. If you encounter the following error during setup: `Exception: Failed to create rnasdev user in sandbox: b'useradd: UID 0 is not unique\n'`
 You can resolve it by running:
     ```
     export SANDBOX_USER_ID=1000
