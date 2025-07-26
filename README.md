@@ -29,6 +29,26 @@
   <a href="https://discord.gg/mBuDGRzzES"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
 </div>
 
+<div align="center">
+  <a href="https://github.com/Na-Rajan/RNasDEV/graphs/contributors"><img src="https://img.shields.io/github/contributors/Na-Rajan/RNasDEV?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/Na-Rajan/RNasDEV/network/members"><img src="https://img.shields.io/github/forks/Na-Rajan/RNasDEV?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/Na-Rajan/RNasDEV/stargazers"><img src="https://img.shields.io/github/stars/Na-Rajan/RNasDEV?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/Na-Rajan/RNasDEV/issues"><img src="https://img.shields.io/github/issues/Na-Rajan/RNasDEV?style=for-the-badge" alt="Issues"></a>
+  <a href="https://github.com/Na-Rajan/RNasDEV/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Na-Rajan/RNasDEV?style=for-the-badge" alt="MIT License"></a>
+  </br>
+  <a href="https://join.slack.com/t/opendevin/shared_invite/zt-2etftj1dd-X1fDL2PYIVpsmJZkqEYANw"><img src="https://img.shields.io/badge/Slack-Join%20Us-red?logo=slack&logoColor=white&style=for-the-badge" alt="Join our Slack community"></a>
+  <a href="https://discord.gg/mBuDGRzzES"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
+</div>
+
+---
+
+> **RNasDEV is an open source developer platform derived from [OpenDevin](https://github.com/OpenDevin/OpenDevin).**
+> Special thanks and credit to the OpenDevin project and its contributors for the foundation and inspiration.
+
+RNasDEV is designed for developers to collaborate, use LLMs, and contribute to a growing ecosystem. Everyone is welcome to use, contribute, and help improve this project!
+
+---
+
 <details>
   <summary>🗂️ Table of Contents</summary>
   <ol>
@@ -40,7 +60,6 @@
       <ul>
         <li><a href="#1-requirements">1. Requirements</a></li>
         <li><a href="#2-build-and-setup">2. Build and Setup</a></li>
-        <li><a href="#3-run-the-application">3. Run the Application</a></li>
         <li><a href="#4-individual-server-startup">4. Individual Server Startup</a></li>
         <li><a href="#5-help">5. Help</a></li>
       </ul>
@@ -49,6 +68,15 @@
     <li><a href="#-how-to-contribute">🤝 How to Contribute</a></li>
     <li><a href="#-join-our-community">🤖 Join Our Community</a></li>
     <li><a href="#%EF%B8%8F-built-with">🛠️ Built With</a></li>
+<details>
+  <summary>🗂️ Table of Contents</summary>
+  <ol>
+    <li><a href="#-mission">🎯 Mission</a></li>
+    <li><a href="#-what-is-rnasdev">🤔 What is RNasDEV?</a></li>
+    <li><a href="#-why-rnasdev">🐚 Why RNasDEV?</a></li>
+    <li><a href="#-project-status">🚧 Project Status</a></li>
+      <a href="#-get-started">🚀 Get Started</a>
+      <ul>
     <li><a href="#-license">📜 License</a></li>
   </ol>
 </details>

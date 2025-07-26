@@ -1,7 +1,11 @@
+
 # Contributing
 
-Thanks for your interest in contributing to RNasDEV! We welcome and appreciate contributions.
+Thanks for your interest in contributing to RNasDEV! RNasDEV is an open source project derived from [OpenDevin](https://github.com/OpenDevin/OpenDevin). We welcome and appreciate contributions from everyone.
+
 To report bugs, create a [GitHub issue](https://github.com/Na-Rajan/RNasDEV/issues/new/choose).
+
+If you have experience with OpenDevin or ideas for collaboration, please share them! We encourage you to help us build a better developer platform together.
 
 ## Contribution Guide
 ### 1. Fork the Official Repository

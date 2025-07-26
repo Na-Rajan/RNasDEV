@@ -1,5 +1,7 @@
+
 # Development Guide
-This guide is for people working on OpenDevin and editing the source code.
+
+This guide is for people working on RNasDEV and editing the source code. RNasDEV is derived from [OpenDevin](https://github.com/OpenDevin/OpenDevin), and we thank the OpenDevin community for their foundational work.
 
 ## Start the server for development
 
